@@ -1,0 +1,145 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noxell • Accueil</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #000; color: #222; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background: #000; backdrop-filter: blur(8px); position: sticky; top: 0; }
+    nav a { margin-left: 25px; text-decoration: none; font-weight: 600; color: #444; }
+    nav a:hover { color: #7a1aff; }
+    .hero { text-align: center; padding: 120px 20px; }
+    .hero h2 { font-size: 48px; margin-bottom: 15px; }
+    footer { text-align: center; padding: 30px; margin-top: 80px; background: #000; backdrop-filter: blur(6px); }
+    /* Glow neon + accents */
+    body { background: #000; color: #eee; }
+
+    header, footer {
+      background: rgba(0,0,0,0.7);
+      box-shadow: 0 0 20px #7a1aff44;
+    }
+
+    img[alt="Logo Noxell"] {
+      filter: drop-shadow(0 0 8px #7a1aff) drop-shadow(0 0 14px #d29b2d);
+    }
+
+    a { color: #c28cff; }
+    a:hover { color: #9b5bff; text-shadow: 0 0 6px #9b5bff; }
+
+    .hero h2 {
+      text-shadow: 0 0 12px #7a1aff;
+      color: #e6d4ff;
+    }
+
+    .hero p {
+      color: #d4c7ff;
+      text-shadow: 0 0 8px #7a1aff66;
+    }
+
+    /* Neon frame */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      border: 3px solid #7a1aff;
+      box-shadow: 0 0 20px #7a1aff, 0 0 40px #7a1aff;
+    }
+
+    /* Soft gradient overlay */
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      background: radial-gradient(circle at center, #2b0057aa 0%, transparent 60%);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Noxell" style="height:60px;">
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="menu.html">Menu</a>
+      <a href="musique.html">Musique</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Bienvenue dans l'univers de Noxell</h2>
+    <p>Phonk • RnB • Jazz • Classique</p>
+  </section>
+  <footer>© 2025 Noxell</footer>
+</body>
+</html>
+
+<!-- menu.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Menu • Noxell</title>
+<style>body{font-family:Arial;background: #000;margin:0;padding:40px;} h2{text-align:center;}</style>
+</head>
+<body>
+<h2>Menu</h2>
+<ul>
+  <li><a href="index.html">Accueil</a></li>
+  <li><a href="musique.html">Musique</a></li>
+  <li><a href="song1.html">Sombrasa 200</a></li>
+  <li><a href="song2.html">Shadow Engine</a></li>
+  <li><a href="song3.html">Hellbound Drifter</a></li>
+  <li><a href="song4.html">Mortal Descent</a></li>
+</ul>
+</body>
+</html>
+
+<!-- musique.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Musique • Noxell</title>
+<style>body{font-family:Arial;background: #000;margin:0;padding:40px;} h2{text-align:center;}</style>
+</head>
+<body>
+<h2>Mes morceaux</h2>
+<ul>
+  <li><a href="song1.html">Sombrasa 200</a></li>
+  <li><a href="song2.html">Shadow Engine</a></li>
+  <li><a href="song3.html">Hellbound Drifter</a></li>
+  <li><a href="song4.html">Mortal Descent</a></li>
+</ul>
+</body>
+</html>
+
+<!-- Song pages -->
+<!-- song1.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8" /><title>Sombrasa 200</title></head>
+<body><h2>Sombrasa 200 — Noxell</h2><audio controls src="SOMBRASA200_FULL_SONG_MusicGPT.mp3"></audio></body>
+</html>
+
+<!-- song2.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8" /><title>Shadow Engine</title></head>
+<body><h2>Shadow Engine — Noxell</h2><audio controls src="ShadowEngine_FULL_SONG_MusicGPT.mp3"></audio></body>
+</html>
+
+<!-- song3.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8" /><title>Hellbound Drifter</title></head>
+<body><h2>Hellbound Drifter — Noxell</h2><audio controls src="HellboundDrifter_FULL_SONG_MusicGPT.mp3"></audio></body>
+</html>
+
+<!-- song4.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8" /><title>Mortal Descent</title></head>
+<body><h2>Mortal Descent — Noxell</h2><audio controls src="MortalDescent_FULL_SONG_MusicGPT.mp3"></audio></body>
+</html>
